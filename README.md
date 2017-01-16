@@ -4,7 +4,7 @@ A small python script that will fetch data from the [ADS](https://ui.adsabs.harv
 
 It allows to specify the search term and the fields that should be fetched.
 
-Since it is using https://github.com/andycasey/ads/ I am shamelessly stealing some of his readme that also applies here:
+Since it is using https://github.com/andycasey/ads/ I am stealing some of its readme that also applies here:
 
 > **Getting Started**
 > 
@@ -15,7 +15,7 @@ Since it is using https://github.com/andycasey/ads/ I am shamelessly stealing so
 > 3. From a terminal type ``pip install ads`` (or [if you must](https://stackoverflow.com/questions/3220404/why-use-pip-over-easy-install), use ``easy_install ads``)
 
 ## How to use it
-```bash
+```
 $ python fetch.py --help
 usage: fetch.py [-h] [--fields comma separated list] [--sort string]
                 [--rows int] [--start int] [--output Path]
@@ -50,7 +50,10 @@ This will fetch the fields
 * abstract
 * author
 * bibcode
+
 and save them in the file `aanda.csv`.
+
+## Pagination
 
 I did not get around to implement the ADS pagination but took the quick and dirty approach which can be seen in the [sample bash script](ads-fetch/get_script.sh).
  
